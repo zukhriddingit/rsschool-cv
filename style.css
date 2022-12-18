@@ -9,12 +9,12 @@
   font-weight: 700;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +23,11 @@ body {
   justify-content: space-between;
   line-height: 1.5;
   color: #4d2323;
+  font-family: ComicBold;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -48,9 +53,11 @@ body {
 
 .nav-item a {
   color: #829985;
-  text-decoration: none;  
+  font-family: ComicBold;
+  text-decoration: none;
   transition: color 0.5s;
 }
+
 .nav-item a:hover {
   color: #4d2323;
 }
@@ -62,13 +69,132 @@ body {
 }
 
 .section-title {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #829985;
 }
 
+.section-list {
+  padding-left: 20px;
+}
+
+.section-list .section-item {
+  font-size: 20px;
+}
+
+#profile {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#profile .profile__image img {
+  border-radius: 30%;
+  width: 50%;
+}
+
+#profile .profile__name .section-title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #829985;
+  font-size: 32px;
+}
+
+#profile .profile__name .profile__position {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+}
+
+#contacts .section-list {
+  list-style: none;
+  padding: 0;
+}
+
+#contacts .section-list .contacts-item:nth-child(1)::before {
+  background-image: url(assets/svg/1.svg);
+}
+
+#contacts .section-list .contacts-item:nth-child(2)::before {
+  background-image: url(assets/svg/2.svg);
+}
+
+#contacts .section-list .contacts-item:nth-child(3)::before {
+  background-image: url(assets/svg/3.svg);
+}
+
+#contacts .section-list .contacts-item:nth-child(4)::before {
+  background-image: url(assets/svg/4.svg);
+}
+
+#contacts .section-list .contacts-item:nth-child(5)::before {
+  background-image: url(assets/svg/5.svg);
+}
+
+#contacts .section-list .contacts-item::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#contacts .section-list .section-item {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 30px;
+}
+
+
+
+
+#code pre code {
+  font-size: 20px;
+}
+
+#summary .summary__text {
+  font-size: 20px;
+}
+
+.footer {
+  background: #829985;
+  padding: 0;
+  padding: 20px 0;
+  margin: 0;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  font-family: ComicRegular;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  align-items: center;
+}
+
+.footer .footer__github {
+  margin-left: 40px;
+  display: inline;
+}
+
+.footer .footer__rsschool {
+  width: 121px;
+  height: 45px;
+  background-image: url(assets/svg/rss.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 @media (max-width: 768px) {
   .section {
